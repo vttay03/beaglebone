@@ -1,0 +1,1 @@
+"./src/setupWatchdog.obj" "./src/setupTimer.obj" "./src/setupGpio.obj" "./src/reset.obj" "./src/main.obj" "./src/lwiplib.obj" "./src/httpd_io.obj" "./src/cgifuncs.obj" "./src/Web.obj" "./src/Uart_l.obj" "./src/Uart.obj" -l"libc.a" "../uartEcho.cmd" 

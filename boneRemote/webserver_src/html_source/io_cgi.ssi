@@ -1,0 +1,94 @@
+<!--?xml version="1.0" encoding="iso-8859-1"?--><!--#FormVars-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="content-type" content="text/html;
+      charset=ISO-8859-1">
+    <title>BONEremote</title>
+    <meta name="generator" content="Amaya, see http://www.w3.org/Amaya/">
+  </head>
+
+<script type="text/javascript">
+<!--
+function SetFormDefaults()
+{
+document.tvcontrol.LEDOn.checked = ls;
+document.tvcontrol.Channel.value = ch;
+document.avcontrol.CMDVal.value = avcmdidx;
+}
+//-->
+</script>
+
+<body onload="SetFormDefaults()">
+    <h2><span style="font-family: Courier New,Courier,monospace"><span
+          style="color:#01004b">BONEremote, v1.1</span></span></h2>
+    <p></p>
+    <p><img alt="bone lcd picture" src="bblcd1.jpg" height="444"
+        width="580"></p>
+    <p></p>
+<br>
+<table align="center" border="1" width="60%">
+<tbody>
+<tr>
+<td>
+<form method="get" action="tvcontrol.cgi" name="tvcontrol">
+<table align="center" border="0" cellpadding="2" cellspacing="2" width="100%">
+<tbody>
+<tr>
+<td align="left" valign="top"><b>Control</b></td>
+<td align="center" valign="top"><b>Current</b></td>
+<td align="right" valign="top"><b>New</b></td>
+</tr>
+<tr>
+<td align="left" valign="top">LED
+State</td>
+<td align="center" valign="top"><!--#LEDtxt--></td>
+<td align="right" valign="top"><input name="LEDOn" value="1" type="checkbox"></td>
+</tr>
+<tr>
+<td align="left" valign="top">TV Channel</td>
+<td align="center" valign="top"><!--#CH--></td>
+<td align="right" valign="top"><input maxlength="3" size="3" name="Channel" value=""></td>
+</tr>
+<tr>
+<td colspan="3" rowspan="1" align="center" valign="middle">
+<input name="Update" value="Update Settings" type="submit"></td>
+</tr>
+</tbody>
+</table>
+</form>
+</td>
+</tr>
+</tbody>
+</table>    
+
+<table align="center" border="1" width="60%">
+<tbody>
+<tr>
+<td>
+<form method="get" action="avcontrol.cgi" name="avcontrol">
+<table align="center" border="0" cellpadding="2" cellspacing="2" width="100%">
+<tbody>
+<tr align="center">
+<td valign="top"><b>Yamaha Receiver Interface<br>
+</b><input maxlength="1" size="1" name="CMDVal" value=""> <input name="AVCmd" value="Send AV Cmd" type="submit">
+</td>
+</tr>
+<tr>
+<td align="left" valign="top">1 = PWR OFF, 2 = PWR ON, 3 = VOL DOWN, 4 = VOL UP, 5 = INPUT DVD, 6 = INPUT CABLE, 7 = INPUT CD</td>
+</tr>
+</tbody>
+</table>
+</form>
+</td>
+</tr>
+</tbody>
+</table>    
+
+<hr size="2" width="100%">&copy;<font face="Courier">vttay03, 2012</font><br>
+    <font face="Courier">The CGI Handler for this page has been accessed <!--#CNT--> times</font><br>
+    <p><br>
+    </p>
+    <p></p>
+  </body>
+</html>
